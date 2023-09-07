@@ -1,0 +1,19 @@
+.bg-grid__grid-line {
+  z-index: 10;
+  width: 1px;
+  min-height: 5000px;
+  background-color: rgba(130, 228, 202, 0.25);
+}
+
+.vertical {
+  height: 1px;
+  min-height: 1px;
+  min-width: 5000px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.blue {
+  background-color: #0d5bff;
+}
