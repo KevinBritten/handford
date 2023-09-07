@@ -1,8 +1,6 @@
 p {
   color: #fff;
   font-family: PT Sans, sans-serif;
-  font-size: 25px;
-  line-height: 30px;
 }
 
 .landing-page__body {
@@ -12,23 +10,23 @@ p {
 .landing-page__container {
   width: 100vw;
   height: 100vh;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
   display: grid;
 }
 
 .landing-page__header {
-  grid-area: 1 / 1 / 2 / 3;
   background-color: #263bff;
 }
 
 .landing-page__header-message {
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
   font-style: italic;
   font-weight: 300;
+  padding: 5px 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .landing-page__link-overflow-container {
@@ -63,19 +61,39 @@ p {
   overflow: visible;
 }
 
-.bg-grid__cell {
-  position: absolute;
-  top: -1000px;
-}
-
-.blue {
-  background-color: #0d5bff;
-}
-
 .landing-page__image {
-  width: 200px;
+  width: 150px;
   height: auto;
   grid-area: 3 / 2 / 4 / 3;
+}
+
+@media (min-width: 568px) {
+  .landing-page__header-message {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-page__container {
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1279px) {
+  .landing-page__container {
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .landing-page__header {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .landing-page__image {
+    width: 200px;
+  }
 }
 
 /* handford-landing-page.css */
