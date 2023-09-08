@@ -1,0 +1,43 @@
+.section.services-section {
+  flex-direction: column;
+}
+
+.section-header.services {
+  margin-left: 132px;
+}
+
+.section-grid.services {
+  height: auto;
+  grid-template-rows: 100px 350px 300px 220px 200px 250px 200px auto;
+  grid-auto-rows: 100px;
+}
+
+.services-item > h3 {
+  margin-left: -3px;
+}
+
+.services__list {
+  margin-left: 4px;
+}
+
+.services-item.--1 {
+  grid-area: 2 / 2 / 3 / 6;
+}
+.services-item.--2 {
+  grid-area: 3 / 7 / 4 / 10;
+}
+.services-item.--3 {
+  grid-area: 4 / 3 / 5 / 6;
+}
+.services-item.--4 {
+  grid-area: 5 / 6 / 6 / 9;
+}
+.services-item.--5 {
+  grid-area: 6 / 2 / 7 / 5;
+}
+.services-item.--6 {
+  grid-area: 7 / 6 / 8 / 9;
+}
+.services-item.--7 {
+  grid-area: 8 / 3 / 9 / 6;
+}
