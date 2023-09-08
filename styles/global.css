@@ -124,6 +124,12 @@ img {
     margin-top: 20px;
     margin-bottom: 10px;
   }
+  h3 {
+    margin-top: 0;
+    margin-bottom: -7px;
+    font-size: 48px;
+    line-height: 58px;
+  }
   h4 {
     margin-top: 10px;
     font-size: 20px;
