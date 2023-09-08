@@ -51,6 +51,10 @@ section {
   transform: translateX(0px) !important;
 }
 
+.--faded {
+  opacity: 0.2 !important;
+}
+
 .menu {
   width: 130px;
   height: 100vh;
