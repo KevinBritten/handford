@@ -20,6 +20,37 @@ section {
   flex-grow: 1;
 }
 
+.section-offset-anchor {
+  height: 100%;
+  position: absolute;
+  top: -50px;
+}
+
+.section-header-container {
+  height: auto;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+}
+
+.section-header {
+  z-index: -50;
+  /* opacity: 0; */
+  white-space: nowrap;
+  margin-left: 130px;
+  line-height: 4.45rem;
+  display: block;
+  position: relative;
+  transform: translateX(-510.469px);
+  opacity: 1;
+  transition: transform 1s ease 0s, opacity 0.5s ease 0s;
+}
+
+.--in-view {
+  transform: translateX(0px) !important;
+}
+
 .menu {
   width: 130px;
   height: 100vh;

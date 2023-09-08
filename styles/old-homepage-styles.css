@@ -1,0 +1,71 @@
+/* handford-homepage.css */
+
+h2,
+.h2-bold {
+  text-shadow: 3px 0 3px #27282a, -3px 0 3px #27282a, 0 3px 3px #27282a,
+    0 -3px 3px #27282a, 3px -3px 3px #27282a, -3px -3px 3px #27282a,
+    3px 3px 3px #27282a, -3px 3px 3px #27282a !important;
+}
+
+h3,
+.h3-bold,
+h4,
+h5,
+h6 {
+  text-shadow: 2px 0 2px #27282a, -2px 0 2px #27282a, 0 2px 2px #27282a,
+    0 -2px 2px #27282a, 2px -2px 2px #27282a, -2px -2px 2px #27282a,
+    2px 2px 2px #27282a, -2px 2px 2px #27282a !important;
+}
+
+p,
+li {
+  text-shadow: 1px 0 5px #27282a, -1px 0 5px #27282a, 0 1px 5px #27282a,
+    0 -1px 5px #27282a;
+}
+
+.--in-view {
+  transform: translateX(0px) !important;
+}
+
+.--faded {
+  opacity: 0.2 !important;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+@keyframes spinning {
+  from {
+    transform: scale(1);
+  }
+  2% {
+    transform: scale(1.05);
+  }
+  7% {
+    transform: scale(1);
+  }
+  9% {
+    transform: scale(1);
+  }
+  11% {
+    transform: scale(1.025);
+  }
+  16% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.site-load-overlay__image {
+  animation-name: spinning;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: linear;
+}

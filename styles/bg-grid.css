@@ -1,5 +1,5 @@
 .bg-grid__grid-line {
-  z-index: 10;
+  z-index: -1;
   width: 1px;
   min-height: 5000px;
   background-color: rgba(130, 228, 202, 0.25);
