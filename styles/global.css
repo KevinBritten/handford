@@ -79,6 +79,11 @@ li {
   line-height: 24px;
 }
 
+img {
+  width: 100%;
+  display: inline-block;
+}
+
 @media (min-width: 568px) {
   p {
     font-size: 25px;

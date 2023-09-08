@@ -92,3 +92,14 @@ section {
   position: relative;
   overflow: visible;
 }
+
+.h2-bold {
+  font-style: italic;
+  font-weight: 900;
+}
+
+@media (min-width: 1279px) {
+  .show-tablet {
+    display: none;
+  }
+}
