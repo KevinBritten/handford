@@ -10,9 +10,8 @@
   grid-auto-columns: 1fr;
   grid-auto-flow: row;
   padding-top: 20px;
-  display: flex;
-  position: -webkit-sticky;
-  position: sticky;
+  display: none;
+
   top: 0;
   right: 0;
   overflow: hidden;
@@ -71,4 +70,12 @@
 .nav-link.--current {
   font-style: italic;
   font-weight: 900;
+}
+
+@media (min-width: 1279px) {
+  .menu {
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+  }
 }

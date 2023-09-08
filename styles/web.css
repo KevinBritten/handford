@@ -22,6 +22,10 @@
   padding-right: 10px;
 }
 
+.web-process-item__right-panel {
+  width: 75%;
+}
+
 .web-process__number {
   width: 100%;
   border-radius: 150px;

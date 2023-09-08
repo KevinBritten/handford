@@ -1,6 +1,9 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <title>Handford.com - Home of Handford Creative and Handford Imaging</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/bg-grid.css" />
     <link rel="stylesheet" href="./styles/main.css" />
@@ -10,10 +13,9 @@
     <link rel="stylesheet" href="./styles/about.css" />
     <link rel="stylesheet" href="./styles/services.css" />
     <link rel="stylesheet" href="./styles/web.css" />
-    <link rel="stylesheet" href="./styles/work.css" />
+    <!-- <link rel="stylesheet" href="./styles/work.css" /> -->
     <link rel="stylesheet" href="./styles/contact.css" />
     <link rel="stylesheet" href="./styles/old-homepage-styles.css" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link
       href="https://fonts.gstatic.com"
@@ -47,16 +49,33 @@
         <section id="hero">
           <div class="section-grid-container">
             <div class="section-grid hero">
-              <img
-                src="./assets/handford-creative/images/hero/images/hc-hero-image--desktop.png"
-                alt=""
-                class="hero__image desktop"
-              />
+              <div class="hero__image-container">
+                <img
+                  src="./assets/handford-creative/images/hero/images/hc-hero-image--desktop.png"
+                  alt=""
+                  class="hero__image --desktop"
+                />
+                <img
+                  src="./assets/handford-creative/images/hero/images/hc-hero-image--tablet.png"
+                  alt=""
+                  class="hero__image --tablet"
+                />
+                <img
+                  src="./assets/handford-creative/images/hero/images/hc-hero-image--mobile.png"
+                  alt=""
+                  class="hero__image --mobile"
+                />
+              </div>
               <div class="hero__script-container">
                 <img
                   src="./assets/handford-creative/images/hero/hero-script/creative-hero-script--landscape.svg"
                   alt=""
-                  class="hero__script"
+                  class="hero__script --landscape"
+                />
+                <img
+                  src="./assets/handford-creative/images/hero/hero-script/creative-hero-script--portrait.svg"
+                  alt=""
+                  class="hero__script --portrait"
                 />
               </div>
               <div class="hero__arrow-container">
@@ -77,6 +96,9 @@
               <div class="bg-grid__grid-line"></div>
               <div class="bg-grid__grid-line"></div>
               <div class="bg-grid__grid-line"></div>
+              <div class="bg-grid__grid-line --show-mobile"></div>
+              <div class="bg-grid__grid-line --show-mobile"></div>
+              <div class="bg-grid__grid-line --show-mobile"></div>
             </div>
           </div>
         </section>
@@ -96,7 +118,6 @@
           </div>
           <div class="section-grid-container">
             <div class="section-grid vision">
-              <div class="bg-grid__grid-line show-mobile"></div>
               <div class="bg-grid__grid-line"></div>
               <div class="bg-grid__grid-line"></div>
               <div class="bg-grid__grid-line"></div>
@@ -106,7 +127,10 @@
               <div class="bg-grid__grid-line"></div>
               <div class="bg-grid__grid-line"></div>
               <div class="bg-grid__grid-line"></div>
-              <div class="bg-grid__grid-line show-mobile"></div>
+              <div class="bg-grid__grid-line"></div>
+              <div class="bg-grid__grid-line --show-mobile"></div>
+              <div class="bg-grid__grid-line --show-mobile"></div>
+              <div class="bg-grid__grid-line --show-mobile"></div>
               <div class="vision__text-container">
                 <h2 class="vision__text">
                   AN ARCHITECTURAL PROCESS THAT UTILIZES &amp; BENEFITS FROM THE
@@ -118,7 +142,7 @@
             </div>
           </div>
         </section>
-        <section class="section about-section">
+        <!-- <section class="section about-section">
           <div id="about" class="section-offset-anchor"></div>
           <div class="section-header-container">
             <h1
@@ -172,8 +196,8 @@
               </div>
             </div>
           </div>
-        </section>
-        <section class="section services-section">
+        </section> -->
+        <!-- <section class="section services-section">
           <div id="services" class="section-offset-anchor"></div>
           <div class="section-header-container">
             <h1
@@ -284,8 +308,8 @@
               </div>
             </div>
           </div>
-        </section>
-        <section class="section web-section">
+        </section> -->
+        <!-- <section class="section web-section">
           <div id="web-process" class="section-offset-anchor"></div>
           <div class="section-header-container web-process">
             <h1
@@ -754,8 +778,8 @@
               </div>
             </div>
           </div>
-        </section>
-        <section class="section">
+        </section> -->
+        <!-- <section class="section">
           <div id="contact" class="section-offset-anchor"></div>
           <div class="section-header-container">
             <h1
@@ -906,7 +930,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
       </div>
       <div class="menu">
         <a href="/" class="link-block w-inline-block"
@@ -930,5 +954,6 @@
         </div>
       </div>
     </div>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

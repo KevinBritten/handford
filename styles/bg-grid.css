@@ -1,4 +1,5 @@
 .bg-grid__grid-line {
+  display: none;
   z-index: -1;
   width: 1px;
   min-height: 5000px;
@@ -16,4 +17,13 @@
 
 .blue {
   background-color: rgba(13, 91, 255, 0.25);
+}
+@media (min-width: 568px) {
+  .bg-grid__grid-line {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1279px) {
 }

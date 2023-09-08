@@ -2,6 +2,10 @@ body {
   background-color: #27282a;
 }
 
+.--show-mobile {
+  display: block;
+}
+
 section {
   border-bottom: 1px solid rgba(130, 228, 202, 0.25);
   flex: 1;
@@ -27,19 +31,19 @@ section {
 }
 
 .section-header-container {
+  width: 90vw;
+  position: relative;
+  top: 0;
   height: auto;
   display: flex;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 20px;
 }
 
 .section-header {
   z-index: -50;
   /* opacity: 0; */
   white-space: nowrap;
-  margin-left: 130px;
-  line-height: 4.45rem;
+  margin-left: 20px;
+  line-height: 2.75rem;
   display: block;
   position: relative;
   transform: translateX(-510.469px);
@@ -72,7 +76,7 @@ section {
 }
 
 .section-grid-container {
-  padding-bottom: 4.45rem;
+  padding-bottom: 2.5rem;
   overflow: hidden;
 }
 
@@ -86,6 +90,9 @@ section {
     "." 100px
     "."
     / 130px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr minmax(0, 0);
+  grid-template-columns:
+    20px 1fr minmax(0, 0) minmax(0, 0) minmax(0, 0) minmax(0, 0)
+    minmax(0, 0) minmax(0, 0) minmax(0, 0) minmax(0, 0) 20px;
   grid-auto-columns: 1fr;
   grid-auto-flow: row;
   display: grid;
@@ -98,8 +105,47 @@ section {
   font-weight: 900;
 }
 
+@media (min-width: 568px) {
+  .--show-mobile {
+    display: none;
+  }
+  .section-header-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+  }
+  .section-header {
+    margin-left: 20px;
+    line-height: 3.6rem;
+  }
+  .section-grid-container {
+    padding-bottom: 3.6rem;
+  }
+  .section-grid {
+    grid-template-rows: 60px auto;
+    grid-template-columns:
+      20px 1fr minmax(0, 0) 1fr minmax(0, 0) 1fr minmax(0, 0)
+      1fr 0 60px 20px;
+  }
+}
+@media (min-width: 768px) {
+}
+
 @media (min-width: 1279px) {
+  .section-header {
+    margin-left: 130px;
+    line-height: 4.45rem;
+  }
+  .section-grid {
+    grid-template:
+      "." 100px
+      "."
+      / 130px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr minmax(0, 0);
+  }
   .show-tablet {
     display: none;
+  }
+  .section-grid-container {
+    padding-bottom: 4.45rem;
   }
 }
