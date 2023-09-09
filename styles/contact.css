@@ -1,16 +1,16 @@
 .section-grid.contact {
-  grid-row-gap: 10px;
-  grid-template-rows: 100px auto auto auto;
-}
-
-.form-block {
-  height: 100%;
-  margin-top: 40px;
-  position: relative;
+  grid-row-gap: 20px;
+  grid-template-rows: 20px auto auto auto;
 }
 
 .w-form {
   margin: 0 0 15px;
+}
+
+.form-block {
+  height: 100%;
+  margin-top: 20px;
+  position: relative;
 }
 
 .form {
@@ -67,7 +67,7 @@ label {
 }
 
 .btn-div {
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin-top: 10px;
   display: flex;
 }
@@ -78,7 +78,7 @@ label {
   border: 0;
   text-decoration: none;
   display: inline-block;
-  width: 28.7%;
+  width: auto;
   color: #0ce5ca;
   background-color: #27282a;
   border-style: solid;
@@ -104,12 +104,46 @@ label {
   padding-top: 25px;
 }
 
+.contact-item.--1,
+.contact-item.--2,
+.contact-item.--3 {
+  grid-column: 2/9;
+}
 .contact-item.--1 {
-  grid-area: 2 / 2 / 3 / 11;
+  grid-row: 2/3;
 }
 .contact-item.--2 {
-  grid-area: 3 / 3 / 4 / 10;
+  grid-row: 3/4;
 }
 .contact-item.--3 {
-  grid-area: 4 / 2 / 5 / 7;
+  grid-row: 4/5;
+}
+
+@media (min-width: 568px) {
+  .section-grid.contact {
+    grid-template-rows: 40px auto auto auto;
+  }
+  .btn-submit {
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .section-grid.contact {
+    grid-template-rows: 60px auto auto auto;
+    grid-row-gap: 10px;
+  }
+}
+@media (min-width: 1279px) {
+  .section-grid.contact {
+    grid-template-rows: 100px auto auto auto;
+  }
+  .form-block {
+    margin-top: 40px;
+  }
+  .btn-submit {
+    width: 28.7%;
+  }
+  .btn-div {
+    justify-content: flex-end;
+  }
 }
