@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Slatestd";
+  src: url("../assets/fonts/SlateStd-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Slatestd";
+  src: url("../assets/fonts/SlateStd-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Slatestd";
+  src: url("../assets/fonts/SlateStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Slatestd";
+  src: url("../assets/fonts/SlateStd-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
