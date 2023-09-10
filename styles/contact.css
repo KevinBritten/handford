@@ -100,6 +100,12 @@ label {
   background-color: #0ce5ca;
 }
 
+.success-message,
+.error-message {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .contact-text-container {
   padding-top: 25px;
 }

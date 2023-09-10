@@ -107,6 +107,12 @@ section {
 .--hide-mobile {
   display: none;
 }
+.--0-opacity {
+  opacity: 0;
+}
+.--hidden {
+  display: none;
+}
 
 @media (min-width: 568px) {
   .section-header-container {
@@ -132,12 +138,6 @@ section {
   }
   .--hide-mobile {
     display: block;
-  }
-  .--0-opacity {
-    opacity: 0;
-  }
-  .--hidden {
-    display: none;
   }
 }
 @media (min-width: 768px) {
