@@ -31,16 +31,21 @@ const setSectionHeaderTransitions = () => {
   }
 };
 const processItemShow = (i) => {
-  const processItems = document
-    .getElementById("desktop-content-process-container")
-    .getElementsByClassName("content-process");
-  for (let item of processItems) {
+  const processItems = Array.from(
+    document
+      .getElementById("desktop-content-process-container")
+      .getElementsByClassName("content-process")
+  );
+  const processNumbers = document.querySelectorAll(".web-process-number.light");
+  processItems.forEach((item, index) => {
     if (!item.classList.contains(`_${i + 1}`)) {
       item.style.display = "none";
+      processNumbers[index].classList.remove("--hidden");
     } else {
       item.style.display = "block";
+      processNumbers[index].classList.add("--hidden");
     }
-  }
+  });
 };
 
 const processItemEventListenerSetup = () => {
@@ -129,7 +134,6 @@ const headerEventListenerSetup = () => {
 
 window.onload = () => {
   setSectionHeaderOffset();
-
   setHeroHeight();
   processItemEventListenerSetup();
   headerEventListenerSetup();
