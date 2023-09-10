@@ -72,6 +72,7 @@
   padding-left: 1px;
   display: block;
   position: relative;
+  animation: bounce 2.5s infinite;
 }
 
 @media (min-width: 568px) {
@@ -134,5 +135,27 @@
   .hero__arrow-container {
     height: 100%;
     grid-area: 5 / 2 / 6 / 3;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-20%);
+  }
+  15% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-10%);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  85% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20%);
   }
 }
