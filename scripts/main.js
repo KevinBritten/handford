@@ -131,6 +131,48 @@ const headerEventListenerSetup = () => {
     }, 300)
   );
 };
+// Function to highlight the current section's .nav-link
+function highlightCurrentNavLink() {
+  // Get all the .nav-link elements
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  // Get all the .section-offset-anchor elements
+  const sectionAnchors = document.querySelectorAll(".section-offset-anchor");
+  console.log(sectionAnchors);
+
+  // If the screen isn't scrolled at least halfway, deselect all and return
+  if (window.scrollY < window.innerHeight / 2) {
+    navLinks.forEach((link) => link.classList.remove("--current"));
+    return;
+  }
+
+  // Determine which section is currently on screen
+  let currentSectionIndex = 0;
+  for (let i = 0; i < sectionAnchors.length; i++) {
+    // Check if the top of the section is above the middle of the viewport
+    if (
+      sectionAnchors[i].getBoundingClientRect().top <=
+      window.innerHeight / 2
+    ) {
+      currentSectionIndex = i;
+    } else {
+      break;
+    }
+  }
+
+  // Remove --current class from all nav-links
+  navLinks.forEach((link) => link.classList.remove("--current"));
+
+  // Add --current class to the current nav-link
+  if (navLinks[currentSectionIndex]) {
+    navLinks[currentSectionIndex].classList.add("--current");
+  }
+}
+
+// Add event listener to the body scroll event with throttling
+const highlightCurrentNavLinkEventListenerSetup = () => {
+  document.addEventListener("scroll", highlightCurrentNavLink);
+};
 
 window.onload = () => {
   setSectionHeaderOffset();
@@ -140,4 +182,5 @@ window.onload = () => {
   setSectionHeaderTransitions();
   // workButtonEventListenerSetup();
   toggleMenuEventListenerSetup();
+  highlightCurrentNavLinkEventListenerSetup();
 };
