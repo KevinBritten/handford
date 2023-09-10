@@ -126,13 +126,14 @@ const headerEventListenerSetup = () => {
     }, 300)
   );
 };
-// setSectionHeaderOffset();
 
 window.onload = () => {
+  setSectionHeaderOffset();
+
   setHeroHeight();
-  // processItemEventListenerSetup();
-  // headerEventListenerSetup();
-  // setSectionHeaderTransitions();
+  processItemEventListenerSetup();
+  headerEventListenerSetup();
+  setSectionHeaderTransitions();
   // workButtonEventListenerSetup();
-  // toggleMenuEventListenerSetup();
+  toggleMenuEventListenerSetup();
 };
