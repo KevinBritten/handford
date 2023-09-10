@@ -40,10 +40,10 @@ const processItemShow = (i) => {
   processItems.forEach((item, index) => {
     if (!item.classList.contains(`_${i + 1}`)) {
       item.style.display = "none";
-      processNumbers[index].classList.remove("--hidden");
+      processNumbers[index].classList.remove("--0-opacity");
     } else {
       item.style.display = "block";
-      processNumbers[index].classList.add("--hidden");
+      processNumbers[index].classList.add("--0-opacity");
     }
   });
 };

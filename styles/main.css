@@ -133,8 +133,11 @@ section {
   .--hide-mobile {
     display: block;
   }
-  .--hidden {
+  .--0-opacity {
     opacity: 0;
+  }
+  .--hidden {
+    display: none;
   }
 }
 @media (min-width: 768px) {
