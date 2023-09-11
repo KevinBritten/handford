@@ -1,0 +1,75 @@
+/* handford-imaging-homepage.css */
+
+body,
+.menu {
+  background-color: #e2e2e2;
+}
+
+h1,
+h2,
+h3,
+h4,
+label {
+  color: #0d5bff;
+}
+
+p,
+li {
+  color: black;
+}
+
+h2,
+.h2-bold {
+  text-shadow: 3px 0 3px #e2e2e2, -3px 0 3px #e2e2e2, 0 3px 3px #e2e2e2,
+    0 -3px 3px #e2e2e2, 3px -3px 3px #e2e2e2, -3px -3px 3px #e2e2e2,
+    3px 3px 3px #e2e2e2, -3px 3px 3px #e2e2e2 !important;
+}
+
+h3,
+.h3-bold,
+h4,
+h5,
+h6 {
+  text-shadow: 2px 0 2px #e2e2e2, -2px 0 2px #e2e2e2, 0 2px 2px #e2e2e2,
+    0 -2px 2px #e2e2e2, 2px -2px 2px #e2e2e2, -2px -2px 2px #e2e2e2,
+    2px 2px 2px #e2e2e2, -2px 2px 2px #e2e2e2 !important;
+}
+
+p,
+li {
+  text-shadow: 1px 0 5px #e2e2e2, -1px 0 5px #e2e2e2, 0 1px 5px #e2e2e2,
+    0 -1px 5px #e2e2e2;
+}
+.bg-grid__grid-line {
+  background-color: rgba(20, 144, 231, 0.25);
+}
+
+.bg-grid__grid-line.hero {
+  background-color: rgba(130, 228, 202, 0.25);
+}
+
+.section-grid,
+.menu,
+.bg-grid__cell.horizontal-gridline,
+section {
+  border-color: rgba(20, 144, 231, 0.25) !important;
+}
+.section {
+  border-bottom: 1px solid rgba(20, 144, 231, 0.25);
+}
+.slider__filter-button {
+  color: #0d5bff;
+  border-color: #0d5bff;
+}
+.slider__filter-button--selected {
+  color: #e2e2e2;
+  background-color: #0d5bff !important;
+}
+
+.slider__nav-button {
+  -webkit-text-stroke-color: #0d5bff;
+}
+
+.slider__nav-button:active {
+  -webkit-text-fill-color: #0d5bff;
+}
