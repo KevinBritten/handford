@@ -109,7 +109,13 @@ img {
   width: 100%;
   display: inline-block;
 }
-
+button,
+[type="button"],
+[type="reset"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  border: 0;
+}
 @media (min-width: 568px) {
   p {
     font-size: 25px;

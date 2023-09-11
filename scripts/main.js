@@ -138,7 +138,6 @@ function highlightCurrentNavLink() {
 
   // Get all the .section-offset-anchor elements
   const sectionAnchors = document.querySelectorAll(".section-offset-anchor");
-  console.log(sectionAnchors);
 
   // If the screen isn't scrolled at least halfway, deselect all and return
   if (window.scrollY < window.innerHeight / 2) {
