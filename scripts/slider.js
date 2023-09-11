@@ -41,16 +41,18 @@ const navButtonsEventListenerSetup = () => {
 };
 
 const handleNavButtonDisable = (to) => {
-  console.log(to);
   const navButtons = document.querySelectorAll(".slider__nav-button");
-  if (to === 0) {
+  navButtons.forEach((button) => {
+    button.classList.remove("slider__nav-button--disabled");
+  });
+  if (splide.length === 1) {
+    navButtons.forEach((button) => {
+      button.classList.add("slider__nav-button--disabled");
+    });
+  } else if (to === 0) {
     navButtons[0].classList.add("slider__nav-button--disabled");
   } else if (to === splide.length - 1) {
     navButtons[1].classList.add("slider__nav-button--disabled");
-  } else {
-    navButtons.forEach((button) => {
-      button.classList.remove("slider__nav-button--disabled");
-    });
   }
 };
 
