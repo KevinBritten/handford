@@ -31,9 +31,26 @@ const schemaTemplate = {
               type: 'image',
             },
             {
-              name: 'videoIdentifier',
-              title: 'Video Identifier',
-              type: 'string',
+              name: 'video',
+              title: 'Video',
+              type: 'object',
+              fields: [
+                {
+                  name: 'videoIdentifier',
+                  title: 'Video Identifier',
+                  type: 'string',
+                },
+                {
+                  name: 'hostSite',
+                  title: 'Host Site',
+                  type: 'string',
+                  initialValue: 'youtube',
+                  options: {
+                    list: ['youtube', 'vimeo'],
+                    layout: 'radio',
+                  },
+                },
+              ],
             },
           ],
           preview: {

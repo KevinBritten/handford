@@ -10,8 +10,12 @@ const client = createClient({
 });
 const builder = imageUrlBuilder(client);
 
+const pageName = window.location.pathname.includes("imaging")
+  ? "imaging"
+  : "creative";
+
 const getCategories = async () => {
-  const categories = client.fetch('*[_type == "creative"]');
+  const categories = client.fetch(`*[_type == "${pageName}"]`);
   return categories;
 };
 
@@ -45,7 +49,7 @@ const handleNavButtonDisable = (to) => {
   navButtons.forEach((button) => {
     button.classList.remove("slider__nav-button--disabled");
   });
-  if (splide.length === 1) {
+  if (splide.length <= 1) {
     navButtons.forEach((button) => {
       button.classList.add("slider__nav-button--disabled");
     });
@@ -112,7 +116,7 @@ const handleFilterButtonClick = (categories, event) => {
 const createSlide = (slideData) => {
   const slide = document.createElement("li");
   slide.classList.add("splide__slide");
-
+  console.log(slideData);
   if (slideData.image) {
     const img = document.createElement("img");
     const src = builder.image(slideData.image.asset._ref).url();
@@ -137,18 +141,22 @@ const createSlide = (slideData) => {
     img.setAttribute("alt", altText);
 
     slide.appendChild(img);
-  } else if (slideData.videoIdentifier) {
+  } else if (slideData.video?.videoIdentifier) {
+    const { videoIdentifier, hostSite } = slideData.video;
+    const videoSrc =
+      hostSite === "youtube"
+        ? "https://www.youtube.com/embed/" + videoIdentifier
+        : "https://player.vimeo.com/video/" + +videoIdentifier;
     const iframe = document.createElement("iframe");
-    iframe.setAttribute(
-      "src",
-      `https://player.vimeo.com/video/${slideData.videoIdentifier}`
-    );
+    iframe.setAttribute("src", videoSrc);
     iframe.setAttribute("width", "100%");
     iframe.setAttribute("height", "100%");
     iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("allow", "autoplay; fullscreen");
+    iframe.setAttribute("allow", "fullscreen");
     iframe.setAttribute("allowfullscreen", "");
     slide.appendChild(iframe);
+  } else {
+    return;
   }
 
   return slide;
