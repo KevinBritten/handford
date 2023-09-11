@@ -1,5 +1,5 @@
 .splide__slide {
-  height: 45vh;
+  height: 65vh;
 }
 
 .splide__slide > img {
@@ -13,12 +13,9 @@
 @media (min-width: 568px) {
 }
 @media (min-width: 768px) {
-  .splide__slide {
-    height: 50vh;
-  }
 }
 @media (min-width: 1279px) {
   .splide__slide {
-    height: 70vh;
+    height: 75vh;
   }
 }
