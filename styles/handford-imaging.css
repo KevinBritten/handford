@@ -73,3 +73,18 @@ section {
 .slider__nav-button:active {
   -webkit-text-fill-color: #0d5bff;
 }
+
+.btn-submit {
+  color: #0d5bff;
+  background-color: #e2e2e2;
+}
+
+.btn-submit:hover {
+  color: #e2e2e2;
+  background-color: #0d5bff;
+}
+
+.text-field-container,
+.text-field.note {
+  border-color: #0d5bff;
+}
