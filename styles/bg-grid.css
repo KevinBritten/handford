@@ -7,6 +7,8 @@
 }
 
 .vertical {
+  z-index: 1;
+
   height: 1px;
   min-height: 1px;
   min-width: 5000px;
