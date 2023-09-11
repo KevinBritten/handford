@@ -18,6 +18,7 @@ const getCategories = async () => {
 const splide = new Splide(".splide", {
   arrows: false,
   lazy: true,
+  keyboard: "global",
 }).mount();
 
 const changeSlide = (direction) => {
@@ -43,7 +44,6 @@ const handleNavButtonDisable = (to) => {
   console.log(to);
   const navButtons = document.querySelectorAll(".slider__nav-button");
   if (to === 0) {
-    console.log("sef");
     navButtons[0].classList.add("slider__nav-button--disabled");
   } else if (to === splide.length - 1) {
     navButtons[1].classList.add("slider__nav-button--disabled");
@@ -157,6 +157,7 @@ const updateSlides = (slides) => {
   slides.forEach((slide) => {
     splide.add(createSlide(slide));
   });
+  handleNavButtonDisable(0);
 };
 
 const filterButtonEventListenerSetup = (categories) => {
