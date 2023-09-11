@@ -23,6 +23,7 @@ const splide = new Splide(".splide", {
   arrows: false,
   lazy: true,
   keyboard: "global",
+  lazyLoad: "nearby",
 }).mount();
 
 const changeSlide = (direction) => {
@@ -117,9 +118,11 @@ const createSlide = (slideData) => {
   const slide = document.createElement("li");
   slide.classList.add("splide__slide");
   console.log(slideData);
+
   if (slideData.image) {
     const img = document.createElement("img");
-    const src = builder.image(slideData.image.asset._ref).url();
+
+    // Generate the srcset for lazy loading
     const srcset =
       builder.image(slideData.image.asset._ref).width(320).url() +
       " 320w," +
@@ -127,8 +130,17 @@ const createSlide = (slideData) => {
       " 480w," +
       builder.image(slideData.image.asset._ref).width(800).url() +
       " 800w";
-    img.setAttribute("src", src);
-    img.setAttribute("srcset", srcset);
+
+    // Set the data-splide-lazy-srcset attribute for lazy loading
+    img.setAttribute("data-splide-lazy-srcset", srcset);
+
+    // Set the data-splide-lazy attribute for the default image
+    const defaultSrc = builder
+      .image(slideData.image.asset._ref)
+      .width(800)
+      .url();
+    img.setAttribute("data-splide-lazy", defaultSrc);
+
     img.setAttribute(
       "sizes",
       "(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
