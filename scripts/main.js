@@ -173,13 +173,11 @@ const highlightCurrentNavLinkEventListenerSetup = () => {
   document.addEventListener("scroll", highlightCurrentNavLink);
 };
 
-window.onload = () => {
-  setSectionHeaderOffset();
-  setHeroHeight();
-  processItemEventListenerSetup();
-  headerEventListenerSetup();
-  setSectionHeaderTransitions();
-  // workButtonEventListenerSetup();
-  toggleMenuEventListenerSetup();
-  highlightCurrentNavLinkEventListenerSetup();
-};
+setSectionHeaderOffset();
+setHeroHeight();
+processItemEventListenerSetup();
+headerEventListenerSetup();
+setSectionHeaderTransitions();
+// workButtonEventListenerSetup();
+toggleMenuEventListenerSetup();
+highlightCurrentNavLinkEventListenerSetup();

@@ -88,4 +88,5 @@ section {
 .text-field-container,
 .text-field.note {
   border-color: #0d5bff;
+  color: black;
 }
