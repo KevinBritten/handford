@@ -1,0 +1,17 @@
+import {defineConfig} from 'sanity'
+import {deskTool} from 'sanity/desk'
+import {visionTool} from '@sanity/vision'
+import {schemaTypes} from './schemas'
+
+export default defineConfig({
+  name: 'default',
+  title: 'Handford',
+  projectId: '81b7ua12',
+  dataset: 'production',
+
+  plugins: [deskTool(), visionTool()],
+
+  schema: {
+    types: schemaTypes,
+  },
+})

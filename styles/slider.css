@@ -1,0 +1,20 @@
+.splide__slide {
+  height: 45vh;
+}
+
+.splide__slide > img {
+  object-fit: contain;
+  max-height: 100%;
+}
+@media (min-width: 568px) {
+}
+@media (min-width: 768px) {
+  .splide__slide {
+    height: 50vh;
+  }
+}
+@media (min-width: 1279px) {
+  .splide__slide {
+    height: 70vh;
+  }
+}
