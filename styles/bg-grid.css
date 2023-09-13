@@ -20,6 +20,10 @@
 .blue {
   background-color: rgba(13, 91, 255, 0.25);
 }
+
+.--show {
+  display: block !important;
+}
 @media (min-width: 568px) {
   .bg-grid__grid-line {
     display: block;
