@@ -124,10 +124,10 @@ const createSlide = (slideData) => {
 
     // Generate the srcset for lazy loading
     const srcset =
-      builder.image(slideData.image.asset._ref).width(320).url() +
-      " 320w," +
-      builder.image(slideData.image.asset._ref).width(480).url() +
-      " 480w," +
+      builder.image(slideData.image.asset._ref).width(540).url() +
+      " 540w," +
+      builder.image(slideData.image.asset._ref).width(740).url() +
+      " 740w," +
       builder.image(slideData.image.asset._ref).width(800).url() +
       " 800w";
 
@@ -143,7 +143,7 @@ const createSlide = (slideData) => {
 
     img.setAttribute(
       "sizes",
-      "(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+      "(max-width: 568px) 540px, (max-width: 768px) 740px, 800px"
     );
 
     // Set alt text based on slideTitle or default to 'Slider Image'

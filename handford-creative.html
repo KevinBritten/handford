@@ -245,9 +245,18 @@
               </div>
 
               <div class="about__image-container">
-                <img
-                  src="assets\handford-creative\images\about\hc-about-photo.png"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      assets/handford-creative/images/about/hc-about-photo--400.png
+                    "
+                    media="(max-width: 1023px)"
+                  />
+                  <img
+                    src="assets/handford-creative/images/about/hc-about-photo.png"
+                    alt="Description of Image Here"
+                  />
+                </picture>
               </div>
               <div class="about__text-3">
                 <h4>Let's create something memorable.</h4>

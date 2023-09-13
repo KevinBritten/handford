@@ -209,9 +209,18 @@
               </div>
 
               <div class="about__image-container">
-                <img
-                  src="assets\handford-imaging\images\about\hi-about-photo.png"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      assets/handford-imaging/images/about/hi-about-photo--400.png
+                    "
+                    media="(max-width: 1023px)"
+                  />
+                  <img
+                    src="assets/handford-imaging/images/about/hi-about-photo.png"
+                    alt="Description of Image Here"
+                  />
+                </picture>
               </div>
             </div>
           </div>
