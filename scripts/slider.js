@@ -124,11 +124,23 @@ const createSlide = (slideData) => {
 
     // Generate the srcset for lazy loading
     const srcset =
-      builder.image(slideData.image.asset._ref).width(540).url() +
+      builder
+        .image(slideData.image.asset._ref)
+        .width(540)
+        .format("webp")
+        .url() +
       " 540w," +
-      builder.image(slideData.image.asset._ref).width(740).url() +
+      builder
+        .image(slideData.image.asset._ref)
+        .width(740)
+        .format("webp")
+        .url() +
       " 740w," +
-      builder.image(slideData.image.asset._ref).width(800).url() +
+      builder
+        .image(slideData.image.asset._ref)
+        .width(800)
+        .format("webp")
+        .url() +
       " 800w";
 
     // Set the data-splide-lazy-srcset attribute for lazy loading
@@ -138,6 +150,7 @@ const createSlide = (slideData) => {
     const defaultSrc = builder
       .image(slideData.image.asset._ref)
       .width(800)
+      .format("webp")
       .url();
     img.setAttribute("data-splide-lazy", defaultSrc);
 
