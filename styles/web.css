@@ -60,13 +60,8 @@
 
 .web-process-number.light {
   display: block;
-
   width: auto;
   height: 100%;
-}
-
-.web-process-number.light:hover {
-  opacity: 0;
 }
 
 .number-div {

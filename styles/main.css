@@ -107,9 +107,7 @@ section {
 .--hide-mobile {
   display: none;
 }
-.--0-opacity {
-  opacity: 0;
-}
+
 .--hidden {
   display: none;
 }
@@ -160,5 +158,8 @@ section {
   }
   .show-tablet {
     display: none;
+  }
+  .--0-opacity-desktop {
+    opacity: 0;
   }
 }
