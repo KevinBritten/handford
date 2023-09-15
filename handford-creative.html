@@ -102,21 +102,24 @@
           <div class="section-grid-container">
             <div class="section-grid hero">
               <div class="hero__image-container">
-                <img
-                  src="./assets/handford-creative/images/hero/images/hc-hero-image--desktop.webp"
-                  alt=""
-                  class="hero__image --desktop"
-                />
-                <img
-                  src="./assets/handford-creative/images/hero/images/hc-hero-image--tablet.webp"
-                  alt=""
-                  class="hero__image --tablet"
-                />
-                <img
-                  src="./assets/handford-creative/images/hero/images/hc-hero-image--mobile.webp"
-                  alt=""
-                  class="hero__image --mobile"
-                />
+                <picture class="hero__image">
+                  <source
+                    media="(min-width: 1279px)"
+                    srcset="
+                      ./assets/handford-creative/images/hero/images/hc-hero-image--desktop.webp
+                    "
+                  />
+                  <source
+                    media="(min-width: 568px) and (max-width: 1278px)"
+                    srcset="
+                      ./assets/handford-creative/images/hero/images/hc-hero-image--tablet.webp
+                    "
+                  />
+                  <img
+                    src="./assets/handford-creative/images/hero/images/hc-hero-image--mobile.webp"
+                    alt=""
+                  />
+                </picture>
               </div>
               <div class="hero__script-container">
                 <img
