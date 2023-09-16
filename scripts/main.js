@@ -56,13 +56,6 @@ const processItemEventListenerSetup = () => {
   });
 };
 
-const setHeroHeight = () => {
-  document.querySelector(
-    ".section-grid.hero"
-  ).style.height = `${window.innerHeight}px`;
-  //   ).style.height = "667px";
-  //   ).style.height = "1180px";
-};
 const workButtonEventListenerSetup = () => {
   document.querySelectorAll(".work__button").forEach((e) => {
     e.addEventListener("click", () => {
@@ -174,7 +167,6 @@ const highlightCurrentNavLinkEventListenerSetup = () => {
 };
 
 setSectionHeaderOffset();
-setHeroHeight();
 processItemEventListenerSetup();
 headerEventListenerSetup();
 setSectionHeaderTransitions();

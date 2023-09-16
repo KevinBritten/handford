@@ -174,7 +174,6 @@ const createSlide = (slideData) => {
         : "https://player.vimeo.com/video/" + +videoIdentifier;
     const iframe = document.createElement("iframe");
     if (hostSite === "vimeo") iframe.setAttribute("data-vimeo-defer", "");
-
     iframe.setAttribute("src", videoSrc);
     iframe.setAttribute("width", "100%");
     iframe.setAttribute("height", "100%");

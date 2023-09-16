@@ -222,6 +222,13 @@
               <div class="bg-grid__grid-line --show-mobile"></div>
               <div class="bg-grid__grid-line --show-mobile"></div>
             </div>
+            <script>
+              (function setHeroHeight() {
+                document.querySelector(
+                  ".section-grid.hero"
+                ).style.height = `${window.innerHeight}px`;
+              })();
+            </script>
           </div>
         </section>
         <section class="section vision-section">
