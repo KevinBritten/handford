@@ -19,10 +19,9 @@
     />
     <link
       rel="preload"
-      href="https://fonts.googleapis.com/css?family=Montserrat:300"
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400%7CMontserrat:300%7CRoboto:300,300italic,regular,700,700italic"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
-      media="(max-width: 1278px)"
     />
 
     <!-- Defered Stylesheets -->
@@ -40,7 +39,7 @@
       />
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Montserrat:300"
+        href="https://fonts.googleapis.com/css?family=PT+Sans:400%7CMontserrat:300%7CRoboto:300,300italic,regular,700,700italic"
         media="all"
       />
       <link rel="stylesheet" href="./styles/build/handford-creative.css" />
@@ -56,18 +55,6 @@
       type="text/javascript"
       async
     ></script>
-
-    <script type="text/javascript">
-      WebFont.load({
-        google: {
-          families: [
-            "PT Sans:400,400italic,700,700italic",
-            "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic",
-            "Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic",
-          ],
-        },
-      });
-    </script>
   </head>
   <body>
     <div class="hamburger-menu">
@@ -1106,13 +1093,17 @@
       </div>
     </div>
 
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/main.js" defer></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      defer
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="./scripts/form.js"></script>
-    <script type="module" src="./scripts/slider.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+      defer
+    ></script>
+    <script src="./scripts/form.js" defer></script>
+    <script type="module" src="./scripts/slider.js" defer></script>
   </body>
 </html>
