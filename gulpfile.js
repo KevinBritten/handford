@@ -1,6 +1,5 @@
 const gulp = require("gulp");
 const concat = require("gulp-concat");
-const sourcemaps = require("gulp-sourcemaps");
 const tap = require("gulp-tap");
 const insert = require("gulp-insert");
 const del = require("del");
@@ -35,7 +34,6 @@ function buildStyles(done) {
   for (const [outputName, files] of Object.entries(pages)) {
     gulp
       .src(files.map((file) => `styles/${file}.css`))
-      .pipe(sourcemaps.init())
       // Tap into the stream to add comments to each file
       .pipe(
         tap(function (file) {
@@ -47,7 +45,6 @@ function buildStyles(done) {
         })
       )
       .pipe(concat(`${outputName}.css`))
-      .pipe(sourcemaps.write())
       .pipe(gulp.dest("styles/build"));
   }
   done();

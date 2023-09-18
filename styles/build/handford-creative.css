@@ -1,3 +1,821 @@
+/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\global.css */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+p {
+  color: #fff;
+  font-family: PT Sans, sans-serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h1 {
+  color: #0ce5ca;
+  letter-spacing: 2.48px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  position: relative;
+  font-size: 3.75rem;
+  line-height: 3.9rem;
+}
+
+h2 {
+  color: #0ce5ca;
+  text-transform: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 35px;
+  line-height: 36px;
+}
+
+h3 {
+  color: #00ff98;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: -7px;
+  font-family: Slatestd, sans-serif;
+  font-size: 37px;
+  line-height: 35px;
+  font-weight: 300;
+}
+
+h4 {
+  color: #0ce5ca;
+  letter-spacing: 1.5px;
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+ul {
+  color: #fff;
+  margin-top: 0;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-family: Slatestd, sans-serif;
+}
+
+li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: PT Sans, sans-serif;
+  margin-bottom: -8px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  width: 100%;
+  display: inline-block;
+}
+button,
+[type="button"],
+[type="reset"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  border: 0;
+}
+@media (min-width: 568px) {
+  p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  h1 {
+    font-size: 5rem;
+    line-height: 4.5rem;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    margin-top: 0;
+    margin-bottom: -7px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+  h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  li {
+    font-size: 25px;
+    line-height: 24px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1279px) {
+  h1 {
+    font-size: 6.1875rem;
+    line-height: 5.5rem;
+  }
+  h2 {
+    line-height: 60px;
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+}
+
+/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\bg-grid.css */
+.bg-grid__grid-line {
+  display: none;
+  z-index: -1;
+  width: 1px;
+  min-height: 5000px;
+  background-color: rgba(130, 228, 202, 0.25);
+}
+
+.vertical {
+  z-index: 1;
+
+  height: 1px;
+  min-height: 1px;
+  min-width: 5000px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.blue {
+  background-color: rgba(13, 91, 255, 0.25);
+}
+
+.--show {
+  display: block !important;
+}
+@media (min-width: 568px) {
+  .bg-grid__grid-line {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1279px) {
+}
+
+/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\main.css */
+body {
+  background-color: #27282a;
+}
+
+section {
+  border-bottom: 1px solid rgba(130, 228, 202, 0.25);
+  flex: 1;
+  display: block;
+  position: relative;
+}
+
+.site-wrapper {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  position: relative;
+}
+
+.sections {
+  flex-grow: 1;
+}
+
+.section-offset-anchor {
+  height: 100%;
+  position: absolute;
+  top: -50px;
+}
+
+.section-header-container {
+  width: 90vw;
+  position: relative;
+  top: 0;
+  height: auto;
+  display: flex;
+}
+
+.section-header {
+  z-index: -50;
+  /* opacity: 0; */
+  white-space: nowrap;
+  margin-left: 20px;
+  line-height: 2.75rem;
+  display: block;
+  position: relative;
+  transform: translateX(-510.469px);
+  opacity: 1;
+  transition: transform 1s ease 0s, opacity 0.5s ease 0s;
+}
+
+.--in-view {
+  transform: translateX(0px) !important;
+}
+
+.--faded {
+  opacity: 0.2 !important;
+}
+
+.menu {
+  width: 130px;
+  height: 100vh;
+  min-width: 130px;
+  background-color: #27282a;
+  border-left: 1px solid rgba(130, 228, 202, 0.25);
+  flex-direction: column;
+  padding-top: 20px;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.section-grid-container {
+  padding-bottom: 2.5rem;
+  overflow: hidden;
+}
+
+.section-grid {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border: 0.25px rgba(130, 228, 202, 0.25);
+  border-top-style: solid;
+  border-left-color: #82e4ca;
+  grid-template:
+    "." 100px
+    "."
+    / 130px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr minmax(0, 0);
+  grid-template-columns:
+    20px 1fr minmax(0, 0) minmax(0, 0) minmax(0, 0) minmax(0, 0)
+    minmax(0, 0) minmax(0, 0) minmax(0, 0) minmax(0, 0) 20px;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  display: grid;
+  position: relative;
+  overflow: visible;
+}
+
+.h2-bold {
+  font-style: italic;
+  font-weight: 900;
+}
+
+.--show-mobile {
+  display: block;
+}
+.--hide-mobile {
+  display: none;
+}
+
+.--hidden {
+  display: none;
+}
+
+@media (min-width: 568px) {
+  .section-header-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+  }
+  .section-header {
+    margin-left: 20px;
+    line-height: 3.6rem;
+  }
+  .section-grid-container {
+    padding-bottom: 3.6rem;
+  }
+  .section-grid {
+    grid-template-rows: 60px auto;
+    grid-template-columns:
+      20px 1fr minmax(0, 0) 1fr minmax(0, 0) 1fr minmax(0, 0)
+      1fr 0 60px 20px;
+  }
+  .--show-mobile {
+    display: none !important;
+  }
+  .--hide-mobile {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1279px) {
+  .section-header {
+    margin-left: 130px;
+    line-height: 4.45rem;
+  }
+  .section-grid {
+    grid-template:
+      "." 100px
+      "."
+      / 130px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr minmax(0, 0);
+  }
+
+  .section-grid-container {
+    padding-bottom: 4.45rem;
+  }
+  .show-tablet {
+    display: none;
+  }
+  .--0-opacity-desktop {
+    opacity: 0;
+  }
+}
+
+/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\hero.css */
+.section-grid.hero {
+  grid-template-rows: 2px minmax(100px, 0.7fr) auto auto 1fr;
+}
+
+.hero__image-container {
+  grid-area: 2 / 1 / 6 / 12;
+  grid-row-end: 3;
+}
+.hero__image {
+  height: 100%;
+  z-index: -100;
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  display: block;
+}
+
+.hero__image > img {
+  height: 100%;
+}
+
+.hero__script-container {
+  grid-area: 3 / 2 / 4 / 10;
+  grid-column-end: 9;
+  z-index: 9;
+}
+
+.hero__script {
+  width: 100%;
+}
+
+.hero__script.--landscape {
+  display: none;
+}
+.hero__script.--portrait {
+  display: block;
+}
+
+.hero__arrow-container {
+  grid-area: 4 / 2 / 5 / 3;
+  height: 100px;
+  position: relative;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.hero__arrow {
+  height: 100%;
+  object-fit: contain;
+  object-position: 0% 0%;
+  flex: 1;
+  padding-left: 1px;
+  display: block;
+  position: relative;
+  animation: bounce 2.5s infinite;
+}
+
+@media (min-width: 568px) {
+  .section-grid.hero {
+    height: 100vh;
+    grid-template-rows: 2px 1fr auto auto 1fr;
+  }
+  .hero__image {
+    object-position: 50% 25%;
+  }
+  .hero__script-container {
+    grid-column-end: 7;
+  }
+  .hero__script.--landscape {
+    display: block;
+  }
+  .hero__script.--portrait {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .hero__script.--landscape {
+    display: none;
+  }
+  .hero__script.--portrait {
+    display: block;
+    z-index: 20;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    object-position: 0% 0%;
+  }
+}
+
+@media (min-width: 1279px) {
+  .section-grid.hero {
+    grid-template-rows: 2px 1fr auto 0.25fr 200px;
+  }
+  .hero__image-container {
+    grid-row-end: 6;
+  }
+  .hero__image {
+    height: 100vh;
+    z-index: -1000;
+    position: relative;
+    object-position: unset;
+  }
+  .hero__script-container {
+    grid-column-end: 10;
+  }
+  .hero__script.--landscape {
+    display: block;
+  }
+  .hero__script.--portrait {
+    display: none;
+  }
+  .hero__arrow-container {
+    height: 100%;
+    grid-area: 5 / 2 / 6 / 3;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-20%);
+  }
+  15% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-10%);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  85% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20%);
+  }
+}
+
+/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\menu.css */
+.menu {
+  width: 130px;
+  height: 100vh;
+  min-width: 130px;
+  background-color: #27282a;
+  border-left: 1px solid rgba(130, 228, 202, 0.25);
+  flex-direction: column;
+  grid-template-rows: 15px auto 14px 60px 1rem 30px 1rem 30px 1rem 30px 1rem 30px 1rem 30px 1.9rem 30px 1rem 1fr 1rem 10px;
+  grid-template-columns: 10px 110px 10px;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  padding-top: 20px;
+  display: none;
+
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.link-block {
+  width: 100%;
+  flex: 1;
+}
+
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.menu__logo {
+  width: 100%;
+  color: #0086f0;
+  width: 110px;
+  height: 110px;
+  object-fit: fill;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  display: flex;
+  position: relative;
+}
+
+.menu__nav-link-container {
+  width: 110px;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.menu__nav-link-container.home {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: #0086f0;
+  margin-bottom: 20px;
+  font-family: Roboto, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.--current {
+  font-style: italic;
+  font-weight: 900;
+}
+
+@media (min-width: 1279px) {
+  .menu {
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\vision.css */
+.section-grid.vision {
+  grid-template-rows: 20px auto;
+}
+
+.vision__text-container {
+  grid-area: 2 / 2 / 3 / 10;
+}
+.vision__text {
+}
+
+@media (min-width: 568px) {
+  .section-grid.vision {
+    grid-template-rows: 60px auto;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1279px) {
+  .section-grid.vision {
+    grid-template:
+      "." 100px
+      "."
+      / 130px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr minmax(0, 0);
+  }
+}
+
+/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\fonts.css */
+@font-face {
+  font-family: "Slatestd";
+  src: url("../assets/fonts/SlateStd-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Slatestd";
+  src: url("../assets/fonts/SlateStd-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Slatestd";
+  src: url("../assets/fonts/SlateStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Slatestd";
+  src: url("../assets/fonts/SlateStd-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\mobile-menu.css */
+.hamburger-menu {
+  z-index: 10;
+  width: 40px;
+  height: 20px;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  position: fixed;
+  top: 40vh;
+  right: 20px;
+}
+
+.hamburger-menu:active,
+.close-btn-wrap:active {
+  transform: scale(1.2);
+}
+
+.open-btn-line {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  border: 1px solid #27282a;
+  border-radius: 20px;
+  position: relative;
+}
+
+.mobile-menu {
+  z-index: 150;
+  background-image: linear-gradient(#0086f0, #0ce5ca);
+  flex-direction: column;
+  grid-template-rows: 20px 70px 1.1fr 35px 1fr 35px 1fr 35px 1fr 35px 1fr 35px 1fr 35px 1fr 70px 1.5fr;
+  grid-template-columns: 1.2fr 1fr 150px 0.7fr 70px 20px;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  transform: translate(100%);
+}
+
+.close-btn-wrap {
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  overflow: hidden;
+
+  flex: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-top: 0;
+  margin-right: 0;
+  top: 10px;
+  right: 10px;
+}
+
+.close-btn-x {
+  width: 150%;
+  height: 2px;
+  background-color: #171717;
+  border-radius: 100px;
+  margin-left: 1px;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.close-btn-x._2 {
+  transform: rotate(45deg);
+}
+
+.nav-item {
+  justify-content: flex-end;
+  align-items: stretch;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav-text {
+  z-index: 13;
+  color: #000;
+
+  font-size: 2.35rem;
+  line-height: 1.7rem;
+  position: relative;
+  font-family: Montserrat, sans-serif;
+}
+
+.mobile-menu__insta-icon-link {
+  width: 50px;
+  height: 50px;
+  flex: none;
+  padding-bottom: 0;
+  padding-right: 0;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.mobile-menu__insta-icon-image {
+  flex: 1;
+  padding-bottom: 0;
+  padding-right: 0;
+  display: block;
+  position: relative;
+}
+
+@media (min-width: 568px) {
+  .hamburger-menu {
+    width: 60px;
+    height: 30px;
+    align-items: normal;
+  }
+  .close-btn-wrap {
+    width: 50px;
+    height: 50px;
+
+    top: 20px;
+    right: 20px;
+
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .nav-text {
+    font-size: 3.5rem;
+    line-height: 2.5rem;
+  }
+  .mobile-menu__insta-icon-link {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1279px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
 /* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\about.css */
 .section-header.about {
   margin-left: 24px;
@@ -87,34 +905,799 @@
   }
 }
 
-/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\fonts.css */
-@font-face {
-  font-family: "Slatestd";
-  src: url("../assets/fonts/SlateStd-Light.otf") format("opentype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Slatestd";
-  src: url("../assets/fonts/SlateStd-LightItalic.otf") format("opentype");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Slatestd";
-  src: url("../assets/fonts/SlateStd-Black.otf") format("opentype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Slatestd";
-  src: url("../assets/fonts/SlateStd-BlackItalic.otf") format("opentype");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
+/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\services.css */
+.section.services-section {
+  flex-direction: column;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFib3V0LmNzcyIsImZvbnRzLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FDeEZBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiJoYW5kZm9yZC1jcmVhdGl2ZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2VjdGlvbi1oZWFkZXIuYWJvdXQge1xyXG4gIG1hcmdpbi1sZWZ0OiAyNHB4O1xyXG59XHJcbi5zZWN0aW9uLWdyaWQuYWJvdXQge1xyXG4gIGdyaWQtcm93LWdhcDogMTBweDtcclxuICBncmlkLXRlbXBsYXRlLXJvd3M6IDIwcHggYXV0byBhdXRvIGF1dG8gYXV0bztcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbn1cclxuXHJcbi5hYm91dF9fdGV4dC0xIHtcclxuICBncmlkLWFyZWE6IDIgLyAyIC8gMyAvIDU7XHJcbn1cclxuXHJcbi5hYm91dF9fdGV4dC0yIHtcclxuICBncmlkLWFyZWE6IDMgLyAyIC8gNCAvIDY7XHJcbiAgZ3JpZC1yb3c6IDQgLyA1O1xyXG4gIGdyaWQtY29sdW1uLXN0YXJ0OiAyO1xyXG59XHJcblxyXG4uYWJvdXRfX3RleHQtMyB7XHJcbiAgZ3JpZC1hcmVhOiA0IC8gMiAvIDUgLyAxMTtcclxuXHJcbiAgZ3JpZC1yb3c6IDUgLyA2O1xyXG59XHJcblxyXG4uYWJvdXRfX2ltYWdlLWNvbnRhaW5lciB7XHJcbiAgZ3JpZC1hcmVhOiAzIC8gMiAvIDQgLyA0O1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogYXV0bztcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcblxyXG4uYWJvdXRfX2ltYWdlIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDEwMCU7XHJcbiAgb2JqZWN0LWZpdDogY29udGFpbjtcclxuICBmbGV4OiAxO1xyXG4gIGRpc3BsYXk6IGlubGluZTtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbn1cclxuXHJcbkBtZWRpYSAobWluLXdpZHRoOiA1NjhweCkge1xyXG4gIC5zZWN0aW9uLWdyaWQuYWJvdXQge1xyXG4gICAgZ3JpZC10ZW1wbGF0ZS1yb3dzOiA2MHB4IGF1dG8gYXV0byBhdXRvO1xyXG4gIH1cclxuICAuYWJvdXRfX3RleHQtMSB7XHJcbiAgICBncmlkLWFyZWE6IDIgLyAyIC8gMyAvIDY7XHJcbiAgfVxyXG4gIC5hYm91dF9fdGV4dC0yIHtcclxuICAgIGdyaWQtYXJlYTogMyAvIDIgLyA0IC8gNjtcclxuICB9XHJcbiAgLmFib3V0X190ZXh0LTMge1xyXG4gICAgZ3JpZC1hcmVhOiA0IC8gMiAvIDUgLyAxMTtcclxuICB9XHJcblxyXG4gIC5hYm91dF9faW1hZ2UtY29udGFpbmVyIHtcclxuICAgIGdyaWQtYXJlYTogMiAvIDYgLyA0IC8gMTA7XHJcblxyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gIH1cclxufVxyXG5AbWVkaWEgKG1pbi13aWR0aDogNzY4cHgpIHtcclxufVxyXG5AbWVkaWEgKG1pbi13aWR0aDogMTI3OXB4KSB7XHJcbiAgLnNlY3Rpb24taGVhZGVyLmFib3V0IHtcclxuICAgIG1hcmdpbi1sZWZ0OiAxMzVweDtcclxuICB9XHJcbiAgLnNlY3Rpb24tZ3JpZC5hYm91dCB7XHJcbiAgICBncmlkLXRlbXBsYXRlLXJvd3M6IDEwMHB4IGF1dG8gYXV0byBhdXRvO1xyXG4gIH1cclxuICAuYWJvdXRfX3RleHQtMSB7XHJcbiAgICBncmlkLWFyZWE6IDIgLyAyIC8gMyAvIDY7XHJcbiAgfVxyXG4gIC5hYm91dF9fdGV4dC0yIHtcclxuICAgIGdyaWQtYXJlYTogMyAvIDIgLyA0IC8gNjtcclxuICB9XHJcbiAgLmFib3V0X190ZXh0LTMge1xyXG4gICAgZ3JpZC1hcmVhOiA0IC8gMiAvIDUgLyAxMTtcclxuICB9XHJcbiAgLmFib3V0X19pbWFnZS1jb250YWluZXIge1xyXG4gICAgZ3JpZC1hcmVhOiAyIC8gNyAvIDUgLyAxMDtcclxuICB9XHJcbn1cclxuIiwiQGZvbnQtZmFjZSB7XHJcbiAgZm9udC1mYW1pbHk6IFwiU2xhdGVzdGRcIjtcclxuICBzcmM6IHVybChcIi4uL2Fzc2V0cy9mb250cy9TbGF0ZVN0ZC1MaWdodC5vdGZcIikgZm9ybWF0KFwib3BlbnR5cGVcIik7XHJcbiAgZm9udC13ZWlnaHQ6IDMwMDtcclxuICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgZm9udC1kaXNwbGF5OiBzd2FwO1xyXG59XHJcbkBmb250LWZhY2Uge1xyXG4gIGZvbnQtZmFtaWx5OiBcIlNsYXRlc3RkXCI7XHJcbiAgc3JjOiB1cmwoXCIuLi9hc3NldHMvZm9udHMvU2xhdGVTdGQtTGlnaHRJdGFsaWMub3RmXCIpIGZvcm1hdChcIm9wZW50eXBlXCIpO1xyXG4gIGZvbnQtd2VpZ2h0OiAzMDA7XHJcbiAgZm9udC1zdHlsZTogaXRhbGljO1xyXG4gIGZvbnQtZGlzcGxheTogc3dhcDtcclxufVxyXG5AZm9udC1mYWNlIHtcclxuICBmb250LWZhbWlseTogXCJTbGF0ZXN0ZFwiO1xyXG4gIHNyYzogdXJsKFwiLi4vYXNzZXRzL2ZvbnRzL1NsYXRlU3RkLUJsYWNrLm90ZlwiKSBmb3JtYXQoXCJvcGVudHlwZVwiKTtcclxuICBmb250LXdlaWdodDogOTAwO1xyXG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcclxuICBmb250LWRpc3BsYXk6IHN3YXA7XHJcbn1cclxuQGZvbnQtZmFjZSB7XHJcbiAgZm9udC1mYW1pbHk6IFwiU2xhdGVzdGRcIjtcclxuICBzcmM6IHVybChcIi4uL2Fzc2V0cy9mb250cy9TbGF0ZVN0ZC1CbGFja0l0YWxpYy5vdGZcIikgZm9ybWF0KFwib3BlbnR5cGVcIik7XHJcbiAgZm9udC13ZWlnaHQ6IDkwMDtcclxuICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbiAgZm9udC1kaXNwbGF5OiBzd2FwO1xyXG59XHJcbiJdfQ== */
+.section-header.services {
+  margin-left: 22px;
+}
+
+.section-grid.services {
+  height: auto;
+  grid-template-rows: 60px auto auto auto auto auto auto auto auto;
+  grid-auto-rows: auto;
+}
+
+.services-item > h3 {
+  margin-left: -3px;
+}
+
+.services__list {
+  margin-left: 0;
+  padding-bottom: 10px;
+}
+
+.services-item {
+  grid-column: 2/9;
+}
+.services-item.--1 {
+  padding-bottom: 20px;
+}
+
+@media (min-width: 568px) {
+  .section-header.services {
+    margin-left: 21px;
+  }
+
+  .services__list {
+    margin-left: 4px;
+  }
+  .services-item.--1 {
+    grid-area: 2 / 2 / 3 / 8;
+  }
+  .services-item.--2 {
+    grid-area: 4 / 2 / 5 / 6;
+  }
+  .services-item.--3 {
+    grid-area: 5 / 6 / 6 / 9;
+  }
+  .services-item.--4 {
+    grid-area: 6 / 4 / 7 / 7;
+  }
+  .services-item.--5 {
+    grid-area: 7 / 2 / 8 / 6;
+  }
+  .services-item.--6 {
+    grid-area: 8 / 4 / 9 / 8;
+  }
+  .services-item.--7 {
+    grid-area: 9 / 6 / 10 / 10;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1279px) {
+  .section-header.services {
+    margin-left: 132px;
+  }
+  .section-grid.services {
+    grid-template-rows: 100px 350px 300px 220px 200px 250px 200px auto;
+    grid-auto-rows: 100px;
+  }
+  .services-item.--1 {
+    grid-area: 2 / 2 / 3 / 6;
+  }
+  .services-item.--2 {
+    grid-area: 3 / 7 / 4 / 10;
+  }
+  .services-item.--3 {
+    grid-area: 4 / 3 / 5 / 6;
+  }
+  .services-item.--4 {
+    grid-area: 5 / 6 / 6 / 9;
+  }
+  .services-item.--5 {
+    grid-area: 6 / 2 / 7 / 5;
+  }
+  .services-item.--6 {
+    grid-area: 7 / 6 / 8 / 9;
+  }
+  .services-item.--7 {
+    grid-area: 8 / 3 / 9 / 6;
+  }
+}
+
+/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\web.css */
+.section-grid.web-process {
+  border-bottom-color: rgba(130, 228, 202, 0.25);
+  grid-row-gap: 10px;
+  grid-template-rows: 20px auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+}
+
+.web-item.heading-spacer {
+  margin-top: 40px;
+}
+
+.web-process-item {
+  width: 160px;
+  display: flex;
+}
+
+.web-process__bullet {
+  width: 75%;
+  object-fit: cover;
+  align-self: flex-start;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.web-process-item__right-panel {
+  width: 75%;
+}
+
+.web-process__number {
+  width: auto;
+  height: 100px;
+
+  border-radius: 150px;
+  flex-direction: column;
+  flex: 0 auto;
+  justify-content: center;
+  align-self: center;
+  display: block;
+  position: relative;
+}
+
+.web-process-number {
+  width: 100%;
+  color: #0ce5ca;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  font-size: 120px;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0;
+}
+.web-process-number.dark {
+  display: none;
+  position: relative;
+}
+
+.web-process-number.light {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+.number-div {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  border: 1px #82e4ca;
+  border-radius: 0;
+  justify-content: space-around;
+  align-self: center;
+  padding-bottom: 50px;
+  font-size: 120px;
+  display: flex;
+}
+
+.number-div:hover {
+  opacity: 1;
+  color: #27282a;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  font-family: Slatestd, sans-serif;
+}
+
+.content-process {
+  margin-top: 0;
+}
+
+.content-process._2,
+.content-process._3,
+.content-process._4,
+.content-process._5,
+.content-process._6,
+.content-process._7 {
+  display: none;
+}
+
+.web-item {
+  grid-column: 2/9;
+}
+.web-process__arrow {
+  width: auto;
+  height: 70px;
+  object-fit: cover;
+}
+.padding-top-bottom {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.web-item.--17 {
+  grid-row-start: 12;
+}
+.web-item.--18 {
+  grid-row-start: 14;
+}
+.web-item.--19 {
+  grid-row-start: 16;
+}
+.web-item.--20 {
+  grid-row-start: 18;
+}
+.web-item.--21 {
+  grid-row-start: 20;
+}
+.web-item.--22 {
+  grid-row-start: 22;
+}
+.web-item.--23 {
+  grid-row-start: 24;
+}
+.web-item.--24 {
+  display: none;
+}
+
+@media (min-width: 568px) {
+  .section-grid.web-process {
+    grid-template-rows: 60px auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-row-gap: 30px;
+  }
+  .web-process-item {
+    width: 100%;
+  }
+  .web-process__bullet {
+    width: 100%;
+  }
+  .web-process__arrow {
+    height: 140px;
+    display: block;
+  }
+  .web-item.--1 {
+    grid-area: 2 / 2 / 3 / 10;
+  }
+  .web-item.--2 {
+    grid-area: 3 / 4 / 4 / 10;
+  }
+  .web-item.--3 {
+    grid-area: 4 / 4 / 5 / 6;
+  }
+  .web-item.--4 {
+    grid-area: 4 / 6 / 5 / 10;
+  }
+  .web-item.--5 {
+    grid-area: 5 / 4 / 6 / 6;
+  }
+  .web-item.--6 {
+    grid-area: 5 / 6 / 6 / 11;
+  }
+  .web-item.--7 {
+    grid-area: 6 / 4 / 7 / 6;
+  }
+  .web-item.--8 {
+    grid-area: 6 / 6 / 7 / 10;
+  }
+  .web-item.--9 {
+    grid-area: 7 / 4 / 8 / 11;
+  }
+  .web-item.--10 {
+    grid-area: 8 / 2 / 9 / 4;
+  }
+  .web-item.--11 {
+    grid-area: 9 / 2 / 10 / 4;
+  }
+  .web-item.--12 {
+    grid-area: 10 / 2 / 11 / 4;
+  }
+  .web-item.--13 {
+    grid-area: 11 / 2 / 12 / 4;
+  }
+  .web-item.--14 {
+    grid-area: 12 / 2 / 13 / 4;
+  }
+  .web-item.--15 {
+    grid-area: 13 / 2 / 14 / 4;
+  }
+  .web-item.--16 {
+    grid-area: 14 / 2 / 15 / 4;
+  }
+  .web-item.--17,
+  .web-item.--18,
+  .web-item.--19,
+  .web-item.--20,
+  .web-item.--21,
+  .web-item.--22,
+  .web-item.--23 {
+    grid-column: 4/9;
+  }
+  .web-item.--17 {
+    grid-row: 8/9;
+  }
+  .web-item.--18 {
+    grid-row: 9 / 10;
+  }
+  .web-item.--19 {
+    grid-row: 10 / 11;
+  }
+  .web-item.--20 {
+    grid-row: 11 / 12;
+  }
+  .web-item.--21 {
+    grid-row: 12 / 13;
+  }
+  .web-item.--22 {
+    grid-row: 13 / 14;
+  }
+  .web-item.--23 {
+    grid-row: 14 / 15;
+  }
+
+  .web-item.--24 {
+    display: none;
+  }
+  .padding-top-bottom {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .web-item.--4,
+  .web-item.--6,
+  .web-item.--8 {
+    grid-column-end: 11;
+  }
+}
+@media (min-width: 1279px) {
+  .section-grid.web-process {
+    grid-template-rows: 30px auto auto auto auto auto auto auto;
+  }
+  .web-process__number,
+  .web-process-number.light {
+    width: 100%;
+    height: auto;
+  }
+  .web-process-number.dark {
+    display: block;
+  }
+  .web-process__arrow {
+    display: none;
+  }
+  .web-item.--1 {
+    grid-area: 2 / 2 / 3 / 6;
+  }
+  .web-item.--2 {
+    grid-area: 2 / 7 / 3 / 10;
+  }
+  .web-item.--3 {
+    grid-area: 3 / 7 / 4 / 8;
+  }
+  .web-item.--4 {
+    grid-area: 3 / 8 / 4 / 11;
+  }
+  .web-item.--5 {
+    grid-area: 4 / 5 / 5 / 6;
+  }
+  .web-item.--6 {
+    grid-area: 4 / 6 / 5 / 9;
+  }
+  .web-item.--7 {
+    grid-area: 5 / 3 / 6 / 4;
+  }
+  .web-item.--8 {
+    grid-area: 5 / 4 / 6 / 7;
+  }
+  .web-item.--9 {
+    grid-area: 6 / 2 / 7 / 10;
+  }
+  .web-item.--10 {
+    grid-area: 7 / 3 / 8 / 4;
+  }
+  .web-item.--11 {
+    grid-area: 7 / 4 / 8 / 5;
+  }
+  .web-item.--12 {
+    grid-area: 7 / 5 / 8 / 6;
+  }
+  .web-item.--13 {
+    grid-area: 7 / 6 / 8 / 7;
+  }
+  .web-item.--14 {
+    grid-area: 7 / 7 / 8 / 8;
+  }
+  .web-item.--15 {
+    grid-area: 7 / 8 / 8 / 9;
+  }
+  .web-item.--16 {
+    grid-area: 7 / 9 / 8 / 10;
+  }
+
+  .web-item.--24 {
+    display: block;
+    grid-area: 8 / 4 / 9 / 9;
+  }
+}
+
+/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\work.css */
+.section-grid.work {
+  grid-template-rows: 20px auto auto;
+  grid-row-gap: 10px;
+  grid-auto-flow: row;
+}
+
+.slider__filter-button-container {
+}
+.slider__filter-button-container {
+  width: 100%;
+  grid-row-gap: 10px;
+  flex-wrap: wrap;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: flex-start;
+  align-items: center;
+  justify-items: start;
+  margin-bottom: 10px;
+  display: grid;
+  grid-area: 2 / 2 / 3 / 10;
+}
+
+.slider__filter-button {
+  color: #0ce5ca;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #0ce5ca;
+  border-radius: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 900;
+  position: relative;
+}
+
+.slider__filter-button--selected {
+  background-color: #0ce5ca;
+  color: white;
+}
+
+.slider__slider-container {
+  grid-area: 3 / 2 / 4 / 10;
+}
+.slider__nav-button-container {
+  grid-area: 4 / 2 / 5 / 10;
+}
+
+.slider__nav-button-container {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0%;
+  display: flex;
+  position: relative;
+}
+.slider__nav-button {
+  line-height: inherit;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0;
+  padding: 9px 15px;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 50%;
+  color: #0ce5ca;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  flex: none;
+  font-family: Roboto, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #0ce5ca;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity 0.25s ease-out;
+}
+.slider__nav-button:active {
+  -webkit-text-fill-color: #0ce5ca;
+}
+.slider__nav-button--disabled {
+  opacity: 25%;
+  cursor: default;
+  -webkit-text-fill-color: transparent !important;
+}
+.slider__nav-disable-overlay {
+  z-index: 102;
+  width: 50%;
+  height: 100%;
+  max-width: 99%;
+  opacity: 0.7;
+  flex: none;
+  display: none;
+  position: absolute;
+  left: 0;
+}
+.slider__nav-disable-overlay.show {
+  display: block;
+}
+@media (min-width: 568px) {
+  .section-grid.work {
+    grid-template-rows: 60px auto auto;
+  }
+  .slider__nav-button-container {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .slider__filter-button-container {
+    grid-area: 2 / 2 / 3 / 10;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1279px) {
+  .section-grid.work {
+    grid-template-rows: 80px auto auto auto;
+  }
+  .slider__filter-button-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\slider.css */
+.splide__slide {
+  height: 65vh;
+}
+
+.splide__slide > img {
+  object-fit: contain;
+  max-height: 100%;
+}
+
+.splide__pagination {
+  padding: 0;
+}
+@media (min-width: 568px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1279px) {
+  .splide__slide {
+    height: 75vh;
+  }
+}
+
+/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\contact.css */
+.section-grid.contact {
+  grid-row-gap: 20px;
+  grid-template-rows: 20px auto auto auto;
+}
+
+.w-form {
+  margin: 0 0 15px;
+}
+
+.form-block {
+  height: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.form {
+  flex-direction: column;
+  display: flex;
+}
+
+label {
+  color: #0ce5ca;
+  margin-bottom: 5px;
+  font-family: Slatestd, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 900;
+  display: block;
+}
+
+.text-field-container {
+  width: 100%;
+  border-bottom: 1px solid rgba(130, 228, 202, 0.25);
+  margin-left: 20px;
+}
+
+.text-field {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0 solid rgba(0, 0, 0, 0);
+  margin-bottom: -10px;
+  margin-left: 10px;
+  padding-bottom: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.text-field.note {
+  width: 100%;
+  height: 150px;
+  border-width: 1px;
+  border-color: rgba(130, 228, 202, 0.25);
+  margin-left: 0;
+}
+
+.div-text__field {
+  align-items: flex-end;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.div-text__field.note {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.btn-div {
+  justify-content: flex-start;
+  margin-top: 10px;
+  display: flex;
+}
+
+.btn-submit {
+  line-height: inherit;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  color: #0ce5ca;
+  background-color: #27282a;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  flex: 0 auto;
+  align-self: center;
+  padding: 10px 15px;
+  font-family: Roboto, sans-serif;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 900;
+  position: relative;
+  -webkit-appearance: button;
+}
+
+.btn-submit:hover {
+  color: #27282a;
+  background-color: #0ce5ca;
+}
+
+.success-message,
+.error-message {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-text-container {
+  padding-top: 25px;
+}
+
+.contact-item.--1,
+.contact-item.--2,
+.contact-item.--3 {
+  grid-column: 2/9;
+}
+.contact-item.--1 {
+  grid-row: 2/3;
+}
+.contact-item.--2 {
+  grid-row: 3/4;
+}
+.contact-item.--3 {
+  grid-row: 4/5;
+}
+
+@media (min-width: 568px) {
+  .section-grid.contact {
+    grid-template-rows: 40px auto auto auto;
+  }
+  .btn-submit {
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .section-grid.contact {
+    grid-template-rows: 60px auto auto auto;
+    grid-row-gap: 10px;
+  }
+}
+@media (min-width: 1279px) {
+  .section-grid.contact {
+    grid-template-rows: 100px auto auto auto;
+  }
+  .form-block {
+    margin-top: 40px;
+  }
+  .btn-submit {
+    width: 28.7%;
+  }
+  .btn-div {
+    justify-content: flex-end;
+  }
+}
+
+/* C:\Users\fernd\Documents\web\Professional Projects\Hanford Creative\handford\handford\styles\old-homepage-styles.css */
+/* handford-homepage.css */
+
+h2,
+.h2-bold {
+  text-shadow: 3px 0 3px #27282a, -3px 0 3px #27282a, 0 3px 3px #27282a,
+    0 -3px 3px #27282a, 3px -3px 3px #27282a, -3px -3px 3px #27282a,
+    3px 3px 3px #27282a, -3px 3px 3px #27282a !important;
+}
+
+h3,
+.h3-bold,
+h4,
+h5,
+h6 {
+  text-shadow: 2px 0 2px #27282a, -2px 0 2px #27282a, 0 2px 2px #27282a,
+    0 -2px 2px #27282a, 2px -2px 2px #27282a, -2px -2px 2px #27282a,
+    2px 2px 2px #27282a, -2px 2px 2px #27282a !important;
+}
+
+p,
+li {
+  text-shadow: 1px 0 5px #27282a, -1px 0 5px #27282a, 0 1px 5px #27282a,
+    0 -1px 5px #27282a;
+}
+
+.--in-view {
+  transform: translateX(0px) !important;
+}
+
+.--faded {
+  opacity: 0.2 !important;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+@keyframes spinning {
+  from {
+    transform: scale(1);
+  }
+  2% {
+    transform: scale(1.05);
+  }
+  7% {
+    transform: scale(1);
+  }
+  9% {
+    transform: scale(1);
+  }
+  11% {
+    transform: scale(1.025);
+  }
+  16% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.site-load-overlay__image {
+  animation-name: spinning;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: linear;
+}
