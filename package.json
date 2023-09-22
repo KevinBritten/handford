@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +17,15 @@
     "gulp-insert": "^0.5.0",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-tap": "^2.0.0"
+    "gulp-tap": "^2.0.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@sanity/client": "^6.4.12",
+    "@sanity/image-url": "^1.0.2",
+    "@splidejs/splide": "^4.1.4",
+    "emailjs": "^4.0.3"
   }
 }
