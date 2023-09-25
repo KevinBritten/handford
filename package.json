@@ -6,20 +6,28 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "dev": "webpack --mode development"
+    "dev": "webpack --mode development",
+    "start": "webpack serve --mode development"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.8.1",
     "del": "^5.1.0",
+    "file-loader": "^6.2.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-insert": "^0.5.0",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-tap": "^2.0.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",

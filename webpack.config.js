@@ -1,10 +1,60 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js", // Your main JS file
+  entry: {
+    shared_js: "./src/entry-points/shared.js",
+    creative_styles: "./src/entry-points/creative.js",
+    imaging_styles: "./src/entry-points/imaging.js",
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/, // Matches .css files
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.html$/i,
+        use: "html-loader",
+      },
+      {
+        test: /\.(webp|png)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "images/[name][ext]",
+        },
+      },
+    ],
+  },
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist"), // Where the final bundle will be placed
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "dist"),
   },
   mode: "production", // Use 'development' for development settings
+  devServer: {
+    static: path.join(__dirname, "dist"), // where dev server will look for static files, not including index.html
+    port: 8080, // port to run dev-server on
+    open: true, // opens browser on run
+    hot: true, // hot module replacement
+    compress: true, // Enable gzip compression for everything served
+    historyApiFallback: true, // will redirect 404s to /index.html
+    //... any other options you want to use
+  },
+  plugins: [
+    // new HtmlWebpackPlugin({
+    //   template: "./src/pages/index.html", // your source html file
+    //   filename: "index.html", // output file in 'dist' directory
+    // }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/handford-creative.html",
+      filename: "handford-creative.html",
+      chunks: ["shared_js", "creative_styles"],
+    }),
+    // new HtmlWebpackPlugin({
+    //   template: "./src/pages/handford-imaging.html",
+    //   filename: "handford-imaging.html",
+    //   chunks: ["shared_js", "imaging_styles"],
+    // }),
+    // ... other plugins if any ...
+  ],
 };
