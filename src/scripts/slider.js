@@ -221,4 +221,18 @@ const main = async () => {
   navButtonDisableListenerSetup();
 };
 
-main();
+const sliderElement = document.querySelector(".splide");
+
+let observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      main(); // Execute your main function when the slider enters the viewport
+
+      // Once executed, you can unobserve the element to prevent it from firing again
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+// Start observing the slider
+observer.observe(sliderElement);
