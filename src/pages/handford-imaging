@@ -120,19 +120,19 @@
                   />
                   <img
                     src="./assets/handford-imaging/images/hero/images/hi-hero-image--mobile.webp"
-                    alt=""
+                    alt="A photo of a happy family walking"
                   />
                 </picture>
               </div>
               <div class="hero__script-container">
                 <img
                   src="./assets/handford-imaging/images/hero/hero-script/imaging-hero-script--landscape.svg"
-                  alt=""
+                  alt="Handford Imaging tells your story through photography and videography."
                   class="hero__script --landscape"
                 />
                 <img
                   src="./assets/handford-imaging/images/hero/hero-script/imaging-hero-script--portrait.svg"
-                  alt=""
+                  alt="Handford Imaging tells your story through photography and videography."
                   class="hero__script --portrait"
                 />
               </div>
@@ -221,7 +221,7 @@
                   />
                   <img
                     src="assets/handford-imaging/images/about/hi-about-photo.webp"
-                    alt="Description of Image Here"
+                    alt="A portrait of Ron Handford"
                   />
                 </picture>
               </div>
