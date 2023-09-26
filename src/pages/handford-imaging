@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Homepage for Handford Imaging. Services provided include: Corporate & Commercial, Family, Engagements and Weddings, Events, Project Promotion"
+    />
     <title>Handford.com - Handford Imaging</title>
     <link
       href="./public/handford-favicon.png"
