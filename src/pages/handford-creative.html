@@ -16,6 +16,14 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
+    <link id="delayed-fonts-link" rel="stylesheet" disabled />
+    <script>
+      window.addEventListener("load", function () {
+        const delayedFontsLink = document.getElementById("delayed-fonts-link");
+        delayedFontsLink.href = "fonts.css"; // Make sure to provide the correct path
+        delayedFontsLink.removeAttribute("disabled");
+      });
+    </script>
 
     <noscript>
       <link

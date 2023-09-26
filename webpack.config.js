@@ -8,6 +8,7 @@ module.exports = {
     shared_js: "./src/entry-points/shared.js",
     creative_styles: "./src/entry-points/creative.js",
     imaging_styles: "./src/entry-points/imaging.js",
+    fonts: "./src/entry-points/fonts.js",
   },
   module: {
     rules: [
@@ -54,6 +55,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/handford-creative.html",
       filename: "handford-creative.html",
+      excludeChunks: ["fonts"],
       chunks: ["shared_js", "creative_styles"],
     }),
     // new HtmlWebpackPlugin({
