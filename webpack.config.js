@@ -5,7 +5,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    shared_js: "./src/entry-points/shared.js",
+    shared_js: "./src/entry-points/shared_js.js",
+    shared_css: "./src/entry-points/shared_css.js",
     creative_styles: "./src/entry-points/creative.js",
     imaging_styles: "./src/entry-points/imaging.js",
     fonts: "./src/entry-points/fonts.js",
@@ -56,13 +57,13 @@ module.exports = {
       template: "./src/pages/handford-creative.html",
       filename: "handford-creative.html",
       excludeChunks: ["fonts"],
-      chunks: ["shared_js", "creative_styles"],
+      chunks: ["shared_js", "shared_css", "creative_styles"],
     }),
-    // new HtmlWebpackPlugin({
-    //   template: "./src/pages/handford-imaging.html",
-    //   filename: "handford-imaging.html",
-    //   chunks: ["shared_js", "imaging_styles"],
-    // }),
-    // ... other plugins if any ...
+    new HtmlWebpackPlugin({
+      template: "./src/pages/handford-imaging.html",
+      filename: "handford-imaging.html",
+      excludeChunks: ["fonts"],
+      chunks: ["shared_js", "shared_css", "imaging_styles"],
+    }),
   ],
 };
