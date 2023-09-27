@@ -7,6 +7,7 @@ module.exports = {
   entry: {
     shared_js: "./src/entry-points/shared_js.js",
     shared_css: "./src/entry-points/shared_css.js",
+    landing_styles: "./src/entry-points/landing.js",
     creative_styles: "./src/entry-points/creative.js",
     imaging_styles: "./src/entry-points/imaging.js",
     fonts: "./src/entry-points/fonts.js",
@@ -49,10 +50,11 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css",
     }),
-    // new HtmlWebpackPlugin({
-    //   template: "./src/pages/index.html", // your source html file
-    //   filename: "index.html", // output file in 'dist' directory
-    // }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/index.html",
+      filename: "index.html",
+      chunks: ["landing_styles"],
+    }),
     new HtmlWebpackPlugin({
       template: "./src/pages/handford-creative.html",
       filename: "handford-creative.html",
