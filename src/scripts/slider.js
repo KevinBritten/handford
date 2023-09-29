@@ -119,7 +119,6 @@ const handleFilterButtonClick = (categories, event) => {
 const createSlide = (slideData) => {
   const slide = document.createElement("li");
   slide.classList.add("splide__slide");
-  console.log(slideData);
 
   if (slideData.image) {
     const img = document.createElement("img");
@@ -222,6 +221,7 @@ const main = async () => {
 };
 
 const sliderElement = document.querySelector(".splide");
+const servicesElement = document.querySelector(".services-section");
 
 let observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
@@ -229,10 +229,12 @@ let observer = new IntersectionObserver((entries, observer) => {
       main(); // Execute your main function when the slider enters the viewport
 
       // Once executed, you can unobserve the element to prevent it from firing again
-      observer.unobserve(entry.target);
+      observer.unobserve(sliderElement);
+      observer.unobserve(servicesElement);
     }
   });
 });
 
 // Start observing the slider
 observer.observe(sliderElement);
+observer.observe(servicesElement);
